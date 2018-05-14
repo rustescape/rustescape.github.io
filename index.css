@@ -1,0 +1,136 @@
+*{
+margin:0;
+padding:0;
+}
+.principal{
+		left: 50%;
+		top: 50%;
+		transform: translate(-50% , -50%);
+		position: absolute;
+		letter-spacing: 5px;
+		text-align: center;
+		}
+		.principal p{
+		font-size: 20px;
+		}
+		@keyframes slide{
+			0%{
+		background-image:url('http://site-301220.mozfiles.com/files/301220/galleries/10511749/large/6.jpg?2106622');
+		}
+			20%{
+		background-image:url('http://site-301220.mozfiles.com/files/301220/galleries/10511749/large/1.jpg?2106584');
+			}
+			20.01%{
+		background-image:url('http://site-301220.mozfiles.com/files/301220/galleries/10511749/large/6.jpg?2106622');
+		}
+			40%{
+		background-image:url('http://site-301220.mozfiles.com/files/301220/galleries/10511749/large/1.jpg?2106584');
+		}
+				40.01%{
+		background-image:url('http://site-301220.mozfiles.com/files/301220/galleries/10511749/large/6.jpg?2106622');
+		}
+			60%{
+		background-image:url('http://site-301220.mozfiles.com/files/301220/galleries/10511749/large/1.jpg?2106584');
+			}
+			60.01%{
+		background-image:url('http://site-301220.mozfiles.com/files/301220/galleries/10511749/large/6.jpg?2106622');
+		}
+			80%{
+		background-image:url('http://site-301220.mozfiles.com/files/301220/galleries/10511749/large/1.jpg?2106584');
+		}
+				80.01%{
+		background-image:url('http://site-301220.mozfiles.com/files/301220/galleries/10511749/large/6.jpg?2106622');
+		}
+					100%{
+		background-image:url('http://site-301220.mozfiles.com/files/301220/galleries/10511749/large/1.jpg?2106584');
+		}
+		
+		
+			}
+.slider{
+		background-repeat: no-repeat;
+		margin-top:60px;
+		background-size: cover;
+		background-position: center;
+		width: 90%;
+		height: 60vh;
+		animation: slide 40s infinite;	
+border:1px solid black;		
+		}
+.d{
+font-family: 'Oswald' , sans-serif;
+letter-spacing: 5px;
+}
+.header{
+font-family: 'Oswald' , sans-serif;
+color:#8FC400;
+}
+.main{
+ padding: 0px;
+ list-style: none;
+ font-family: arial;
+}
+ul li {
+ float: left;
+ width: 200px;
+ height: 40px;
+ background-color: black;
+ opacity: .8;
+ line-height: 40px;
+ text-align: center;
+ font-size: 20px;
+}
+ul li a {
+ text-decoration: none;
+ color: white;
+ display: block;
+}
+ul li a:hover {
+ background-color: green;
+}
+ul li ul li{
+ display: none;
+}
+
+ul li:hover ul li {
+ display: block;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-image:url('background.jpg');
+	width: 100%;
+	height: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+* {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+.page {
+    width: 35cm;
+    min-height: auto;
+    padding: 2cm;
+    margin: 1cm auto;
+    border: 1px #D3D3D3 solid;
+    border-radius: 5px;
+    background: white;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+@page {
+    size: A4;
+    margin: 0;
+}
+@media print {
+    .page {
+        margin: 0;
+        border: initial;
+        border-radius: initial;
+        width: initial;
+        min-height: initial;
+        box-shadow: initial;
+        background: initial;
+        page-break-after: always;
+    }
+}
